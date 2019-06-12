@@ -4,6 +4,6 @@ module.exports = {
   propsParser: require('react-docgen-typescript').parse,
 
   styleguideComponents: {
-     Wrapper: path.join(__dirname, 'styleguidist', 'Wrapper'),
+     Wrapper: path.join(__dirname, 'src', 'styleguidist', 'Wrapper'),
   },
 };

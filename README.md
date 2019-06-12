@@ -1,3 +1,26 @@
+# CRA typescript styleguideComponents
+
+I wanted to provide evidence of an issue I was having with a custom styleguidist
+Wrapper written in typescript, in a create-react-app (CRA) app.
+
+```
+Module parse failed: Unexpected token (18:2)
+You may need an appropriate loader to handle this file type.
+```
+
+Refers to:
+https://github.com/styleguidist/react-styleguidist/issues/750
+
+The reason webpack was unable to provide a correct loader was due to the fact that
+the folder my styleguidist Wrapper was in was not included in the `src` folder, and
+so the standard webpack config for CRA did not target it.
+
+Once I moved the Wrapper into the `src` folder, the issue was resolved.
+
+---
+
+ORIGINAL CRA README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
