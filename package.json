@@ -35,6 +35,6 @@
   "devDependencies": {
     "@types/react": "^16.8.19",
     "react-docgen-typescript": "^1.12.4",
-    "react-styleguidist": "^9.1.6"
+    "react-styleguidist": "^9.2.0"
   }
 }
